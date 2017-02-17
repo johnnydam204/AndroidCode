@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="55555"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMaBaiHat"
+            android:textSize="28sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="100dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Không yêu thì thôi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTenBaiHat"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="Ngọt Ngào"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTenCaSy"
+                android:textSize="18sp"
+                android:textStyle="normal|italic"
+                android:textColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/like"
+                    android:id="@+id/btnLike"
+                    android:layout_weight="0.02" />
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/dislike"
+                    android:id="@+id/btnDislike" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/textView2"
+        android:background="@color/colorPrimary" />
+</LinearLayout>
